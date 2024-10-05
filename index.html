@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     
     <title>AI Poem</title>
   </head>
@@ -17,7 +19,7 @@
     </div>
 
   <main>
-    <form>
+    <form id="poem-generator-form">
       <input 
       type="text"
       placeholder="Enter a hero topic c:"
@@ -29,13 +31,8 @@
        </form>
        <br>
 
-       <div>
-        Heroes rise with power bright,
-        Iron, thunder, webs in flight.
-      <br>
-        A shield that shines, a king’s proud roar,
-        Together they stand, forever more.🌟
-       </div>
+       <div class="poem" id="poem"></div>
+       
   </main>
 
     <footer>

@@ -84,10 +84,10 @@ input[type="submit"]:hover {
 }
 
 .slide-right {
-    width: 100%; /* or a specific percentage/size like 80% depending on design */
+    width: 100%; 
     max-width: 1727px;
-    margin: 0 auto; /* Centers the element horizontally */
-    background-color: #DFFF00; /* Fixed the invalid background-color */
+    margin: 0 auto; 
+    background-color: #DFFF00; 
     padding: 0px 40px;
     overflow: hidden;
 
@@ -103,6 +103,28 @@ input[type="submit"]:hover {
         transform: translateX(0);
     }
 }
+
+
+
+/* the user experience portion below*/
+.generating {
+    animation: blink-animation 8s steps(15, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+
+
 
 
 footer {

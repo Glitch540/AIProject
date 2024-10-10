@@ -14,7 +14,7 @@ function generatePoem(event) {
 
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "133dfa996a9f3f03de4ad12bobb44eat";
-  let context = "Your mission is to generate a 4 line Marvel super hero poem and generate a new one every time. Make sure to follow the user instructions below";
+  let context = "Your mission is to generate a 4 line Marvel superhero poem and generate a new one every time. Make sure to follow the user instructions below";
   let prompt = `Generate a hero poem about Marvel superheroes ${instructionsInput.value.trim()}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 

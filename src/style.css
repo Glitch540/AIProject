@@ -12,7 +12,8 @@ main {
     position: static;
     padding: 30px;
     box-shadow: 0px 10px 10px black;
-    width: 80%; /* Set to 80% to match slide-right */
+    width: 80%; /* Flexible width */
+    max-width: 1200px; /* Limit the width to 1200px */
     margin: 0 auto; /* Centers the element horizontally */
 }
 
@@ -110,7 +111,7 @@ input[type="submit"]:hover {
 
 /* the user experience portion below*/
 .generating {
-    animation: blink-animation 8s steps(15, start) infinite;
+    animation: blink-animation 1s steps(5, start) infinite;
   }
   
   @keyframes blink-animation {
@@ -123,7 +124,6 @@ input[type="submit"]:hover {
       visibility: hidden;
     }
   }
-
 
 
 
